@@ -86,17 +86,16 @@ main form {
 }
  main form .fa {
 
-    width: 14px;
-    height: 18px;
-    left: 18px;
-    top: 15px;
-    color: #000000;
     position: relative;
-    left: -35px;
+
+    left: -40px;
+    top:20px;
+    color: #000000;
+  
 
  }
 
-main form input[type="button"]{
+main form input[type="text"]{
 
     padding: 20px 10px;
     border: none;
@@ -106,13 +105,16 @@ main form input[type="button"]{
     width: 60px;
 
 
+
 }
 
 main form input[type="search"]{
 
     padding: 20px 10px;
     border: none;
-    width: 170px;
+    width: 200px;
+    font-weight: 700;
+    color: #000000;
  
     
 
@@ -121,12 +123,14 @@ main form input[type="search"]{
 main form input[type="submit"]{
     border: none;
     padding: 20px 10px;
+    font-weight: 700;
+    font-size: 18px;
 
     background-color:var(--main-color);
     color: #FFFFFF;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 100px;
+    width: 150px;
     cursor: pointer;
 
 }
