@@ -20,22 +20,23 @@ header img {
     width: 61.09px;
     height: 19px;
     left: 30px;
-    top: 30px;
+    top: 50px;
 
 }  
 header ul li{
 
     text-decoration: none;
     list-style-type: none;
-    display: inline-block;
-    margin: 10px;
-    
-   
+    display:inline-block;
+    align-items: right;
+
 } 
 
-header ul {
-     text-align: right;
-    /*margin-bottom: 60px;*/
+
+
+
+.list-head{
+    display: inline-block;
 }
 
 body {
@@ -87,8 +88,9 @@ main form {
  main form .fa {
 
     position: relative;
+    font-size: 20px;
 
-    left: -40px;
+    left: -35px;
     top:20px;
     color: #000000;
   
@@ -102,7 +104,7 @@ main form input[type="text"]{
     border-top-left-radius: 15px;
     border-bottom-left-radius:15px;
     background-color:var(--main-bg-color);
-    width: 60px;
+    width: 40px;
 
 
 
@@ -207,6 +209,7 @@ main .list-filtres li input[type="button"]{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    
 }
 
 
@@ -285,7 +288,7 @@ main .list-filtres li input[type="button"]{
 }
 
 
-/*actuelités*/
+/*************************actualités*****************************/
 
 .card-actuality img{
 
@@ -335,23 +338,7 @@ footer div li{
         margin-right: 150px;
       
 }
-.li1{
 
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.li2{
-
-    
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    justify-content: space-around;
-
-}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -394,6 +381,73 @@ footer div li{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+
+    body {
+        display: flex;
+     
+     
+    }
+      
+
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+
+    }
+
+    .hebergements {
+        width: 375px;
+    }
+
+    .populaires {
+        width: 375px;
+        height: 650px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .populaires-cards {
+       
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    .populaires-cards .card {
+        width: 330px;
+        height: 144px;
+        display: flex;
+    
+    }
+
+
+
+    footer div {
+
+        display: block;
+        
+    
+    
+    }
+
+    footer{
+        padding: 30px;
+        gap: 50px;
+
+        width: 375px;
+        height: 461px;
+
+      
+        background-color: var(--main-bg-color);
+    }
+
+    footer div li{
+        list-style-type: none;
+        justify-content: space-between;
+     
+      
+}
 
 
 }
