@@ -212,19 +212,16 @@ main .list-filtres li input[type="button"]{
     
 }
 
-
-/*card heberegements*/
-
 .card-hebere{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     width: 230px;
-    height: 250px;
+    height: 207.25px;
     align-items: center;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 5px;
-
+    display: flex;
     display: inline-block;
     justify-content: space-around;
     
@@ -232,16 +229,25 @@ main .list-filtres li input[type="button"]{
  
 .card-hebere img {
 
-    object-fit: cover;
     width: 230px;
     height: 124px;
     position: relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    display: flex;
    
 }
 
-
+.card-hebere .card-title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.card-hebere .card-subtitle{
+    margin: 0;
+}
+.card-hebere .card-rating {
+    margin-bottom: 5px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
