@@ -23,21 +23,32 @@ header img {
     top: 50px;
 
 }  
-header ul li{
+.list-head li {
+  display: inline-block;
+  margin-left: 20px;
+  
+}
+
+.list-head ul {
+    text-align: right;
+    
+}
+
+
+.list-head a {
 
     text-decoration: none;
-    list-style-type: none;
-    display:inline-block;
-    align-items: right;
-
-} 
-
-
-
-
-.list-head{
-    display: inline-block;
+    font-weight: 400;
 }
+
+.list-head .colorBlack {
+
+    color: #000000;
+}
+
+
+
+
 
 body {
     display: flex;
@@ -76,10 +87,7 @@ body {
 }
 
 
-.search-bar{
- 
-    
-}
+
 
 main form {
     display: flex;
