@@ -87,7 +87,7 @@ body {
 }
 
 
-
+/* bar-search */
 
 main form {
     display: flex;
@@ -163,6 +163,7 @@ main .list-filtres li input[type="button"]{
 }
 
 
+
 .li-bg-color{
 
     background-color: var(--filter-bg-color);
@@ -232,6 +233,7 @@ main .list-filtres li input[type="button"]{
     display: flex;
     display: inline-block;
     justify-content: space-around;
+    margin-left: 10px;
     
 }
  
@@ -331,11 +333,17 @@ main .list-filtres li input[type="button"]{
 /****************footer**********************/
 
 
-.footer{
+footer{
 
     width: 1340px;
-    height: 163px;
+    height: 200px;
     background-color: var(--main-bg-color);
+}
+
+footer li{
+
+    margin:15px;
+   
 }
 
 footer div {
@@ -359,7 +367,7 @@ footer div li{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -390,35 +398,126 @@ footer div li{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-actuality {
+       
+        width: 35%;
+        height: 250px;
+
+        align-items: flex-start;
+        padding: 20px 19px;
+        gap: 10px;
+        margin-left: 5px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+       
+    }
+
+
+    .card-actuality img{
+
+        width:100%;
+        height: 200px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+                
+            
+    
+    }
+    
+
+
+
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
+
     /* ... */
 
 
-    body {
-        display: flex;
-     
-     
+    body{
+
+        max-width: 767px;
     }
+
+    header img{
+
+       margin-left: 120px;
+    }
+
+    .list-head ul {
+    text-align: center;
+        
+    }
+
+    .main-container{
+
+    
+        padding: 0px;
+        margin: 0px;
       
+       
+    }
 
 
+
+    main form input[type="submit"]{
+
+       width: 49px;
+       border-bottom-left-radius: 15px;
+       border-top-left-radius: 15px;
+
+    }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
 
+        border-color: #FFFFFF;
+        margin: 0;
+
     }
+
 
     .hebergements {
-        width: 375px;
+   
+        background-color: #FFFFFF;
+       
     }
 
+    .card-hebere{
+     
+       
+        width: 252px;
+        height: 220px;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+        margin-left: 0;
+        
+    }
+
+    .card-hebere img {
+
+        width: 250px;
+        height: 140px;
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: flex;
+       
+    }
+
+
     .populaires {
-        width: 375px;
-        height: 650px;
+        width: 300px;
+        height: 700px;
         margin-bottom: 50px;
         justify-content: center;
+        margin-left: 0;
     }
 
     .populaires-cards {
@@ -426,42 +525,72 @@ footer div li{
         flex-direction: column;
         justify-content: space-between;
         margin: 0;
+    
     }
     
     .populaires-cards .card {
-        width: 330px;
-        height: 144px;
+        width: 250px;
+        height: 138px;
         display: flex;
     
     }
 
 
+    .card-actuality {
+       
+        width: 230px;
+        height: 200px;
 
-    footer div {
+        align-items: flex-start;
+        padding: 20px 19px;
+        gap: 10px;
+        margin-left: 5px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+       
+    }
 
-        display: block;
-        
-    
+
+    .card-actuality img{
+
+        width: 250px;;
+        height: 160px;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+                
+            
     
     }
+    
+
+  
+
+    
 
     footer{
-        padding: 30px;
-        gap: 50px;
-
-        width: 375px;
-        height: 461px;
-
-      
         background-color: var(--main-bg-color);
+        width: 300px;
+        height: 500px;
     }
 
-    footer div li{
+
+
+
+    
+
+    footer div {
         list-style-type: none;
         justify-content: space-between;
+        display: block;
+        
      
       
-}
+    }
 
 
 }
