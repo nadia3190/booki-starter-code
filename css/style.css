@@ -516,12 +516,13 @@ footer div li{
        width: 49px;
        border-bottom-left-radius: 15px;
        border-top-left-radius: 15px;
+       color: var(--main-color);
 
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
 
-        border-color: #FFFFFF;
+        border-color: var(--main-color);
         margin: 0;
 
     }
@@ -557,7 +558,7 @@ footer div li{
 
 
     .populaires {
-        width: 300px;
+        width: 320px;
         height: 700px;
         margin-bottom: 50px;
         justify-content: center;
