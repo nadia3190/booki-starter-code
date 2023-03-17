@@ -29,6 +29,12 @@ header img {
   
 }
 
+.border-li{
+
+    border-top: 2px solid var(--main-color);
+    margin-top: 10px;
+}
+
 .list-head ul {
     text-align: right;
     
@@ -448,12 +454,33 @@ footer div li{
 
     header img{
 
-       margin-left: 120px;
+       margin-left: 150px;
     }
 
+    .border-li{
+
+        border-bottom: 2px solid var(--main-color);
+        border-top: 0px;
+    }
+    .border-li-act{
+        border-bottom: 2px solid var(--main-bg-color);
+    }
     .list-head ul {
-    text-align: center;
+    
+
+        margin-right: 80px;
         
+    }
+
+    .list-filtres ul .li{
+
+       
+            margin: 0;
+        
+    }
+
+    .list-filtres ul .li-filtres{
+        margin-right: 150px;
     }
 
     .main-container{
@@ -567,21 +594,12 @@ footer div li{
     
     }
     
-
-  
-
-    
-
     footer{
         background-color: var(--main-bg-color);
         width: 300px;
-        height: 500px;
+        height: 550px;
     }
 
-
-
-
-    
 
     footer div {
         list-style-type: none;
