@@ -158,28 +158,35 @@ main .list-filtres li{
     font-weight: 700;
     
 } 
+.list-filtres .fa-solid {
+    position: absolute;
+    margin-left:10px;
+    margin-top: 18px;
+    }
 
 main .list-filtres li input[type="button"]{
 
     font-weight: 700;
-    border:1px solid var(--main-bg-color);
-    background-color: white;
+    border:3px solid var(--main-bg-color);
+
     padding: 15px 30px;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
+input[value="Nos pépites"]{
+
+    background-color:#DEEBFF;
+}
+
+input[value="Economiques"], input[value="Familial"], input[value="Romantique"]{
+    background-color: #FFFFFF;
+}
 
 
 .li-bg-color{
 
     background-color: var(--filter-bg-color);
 }
-
-
-
-
-
-
 
 /*populaires*/
 .card {
@@ -468,7 +475,7 @@ footer div li{
     .list-head ul {
     
 
-        margin-right: 80px;
+        margin-right: 40px;
         
     }
 
@@ -481,6 +488,16 @@ footer div li{
 
     .list-filtres ul .li-filtres{
         margin-right: 150px;
+    }
+
+    input[value="Nos pépites"]{
+
+        background-color:white;
+    }
+
+    input[value="Romantique"]{
+
+        background-color:#DEEBFF;
     }
 
     .main-container{
