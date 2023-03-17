@@ -178,7 +178,7 @@ input[value="Nos pépites"]{
     background-color:#DEEBFF;
 }
 
-input[value="Economiques"], input[value="Familial"], input[value="Romantique"]{
+input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
     background-color: #FFFFFF;
 }
 
@@ -529,7 +529,7 @@ footer div li{
 
     .hebergements {
    
-        background-color: #FFFFFF;
+        background-color: #FFFFFF !important;
        
     }
 
