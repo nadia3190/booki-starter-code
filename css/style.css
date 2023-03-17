@@ -487,7 +487,7 @@ footer div li{
     }
 
     .list-filtres ul .li-filtres{
-        margin-right: 150px;
+        margin-right: 158px;
     }
 
     input[value="Nos pépites"]{
@@ -498,6 +498,7 @@ footer div li{
     input[value="Romantique"]{
 
         background-color:#DEEBFF;
+        
     }
 
     .main-container{
@@ -583,8 +584,8 @@ footer div li{
 
     .card-actuality {
        
-        width: 230px;
-        height: 200px;
+        width: 250px;
+        height: 210px;
 
         align-items: flex-start;
         padding: 20px 19px;
@@ -600,7 +601,7 @@ footer div li{
 
     .card-actuality img{
 
-        width: 250px;;
+        width: 268px;;
         height: 160px;
 
         flex: none;
