@@ -343,6 +343,9 @@ input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
 
 }
 
+
+
+
 /****************footer**********************/
 
 
@@ -381,16 +384,20 @@ footer div li{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (min-width:768px) and (max-width: 1024px) {
+
+   
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
-        width: 100%;
+        width: 924px;
+        height: 611.5px;
     }
 
     .populaires {
-        width: 100%;
+        width: 924px;
+        height: 250px;
         margin-top: 50px;
     }
 
@@ -411,36 +418,45 @@ footer div li{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    
+    .actualités{
 
+
+        width: 924px;
+        height: 400px;
+  
+
+    }
     .card-actuality {
        
-        width: 35%;
-        height: 250px;
+        width: 194px;
+        height: 240px;
 
-        align-items: flex-start;
-        padding: 20px 19px;
-        gap: 10px;
-        margin-left: 5px;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
-       
+    
+        
+ 
     }
 
 
     .card-actuality img{
 
-        width:100%;
-        height: 200px;
-
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
-                
-            
+        width: 193.5px;
+        height: 200px;        
     
+    }
+
+
+
+    footer{
+        background-color: var(--main-bg-color);
+        width: 924px;
+        height: 163px;
+    }
+
+    footer div li{
+
+        margin-right: 60px;
+
     }
     
 
@@ -478,6 +494,7 @@ footer div li{
         margin-right: 40px;
         
     }
+    
 
     .list-filtres ul .li{
 
