@@ -1,6 +1,10 @@
 /****** General ***********/
-* {
+body {
     font-family: 'Raleway', sans-serif;
+    margin-top: 6px;
+    padding: 0px;
+    margin-left:0px;
+
    
  
 
@@ -14,6 +18,12 @@
 
 .fa-solid {
     color: var(--main-color);
+  
+}
+
+.fa-magnifying-glass{
+    color: #FFFFFF;
+    display: none;
 }
 header img {
    
@@ -26,6 +36,7 @@ header img {
 .list-head li {
   display: inline-block;
   margin-left: 20px;
+
   
 }
 
@@ -37,6 +48,7 @@ header img {
 
 .list-head ul {
     text-align: right;
+   
     
 }
 
@@ -56,17 +68,15 @@ header img {
 
 
 
-body {
-    display: flex;
-    justify-content: center;
- 
-}
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0;
     box-sizing: border-box;
+    margin-left: 15%;
+
+    margin-right: 2.5%;
 }
 
 .section-title {
@@ -110,6 +120,10 @@ main form {
   
 
  }
+ main form input[type="submit2"]{
+
+    display: none;
+ }
 
 main form input[type="text"]{
 
@@ -150,18 +164,17 @@ main form input[type="submit"]{
     cursor: pointer;
 
 }
-
 main .list-filtres li{
 
-    display: inline-block;
     margin: 30px;
     font-weight: 700;
+    display: inline-block;
     
 } 
 .list-filtres .fa-solid {
     position: absolute;
     margin-left:10px;
-    margin-top: 18px;
+    margin-top: 17px;
     }
 
 main .list-filtres li input[type="button"]{
@@ -386,19 +399,37 @@ footer div li{
 @media screen and (min-width:768px) and (max-width: 1024px) {
 
    
+     .main-container {
+
+            max-width: 992px;
+            padding: 0;
+            box-sizing: border-box;
+            margin: 3%;
+        }
+
+        .list-head ul {
+    
+
+            margin-right: -10px;
+            
+        }
+   
     .hebergements-and-populaires {
         flex-direction: column;
+        margin: 0;
     }
 
     .hebergements {
         width: 924px;
         height: 611.5px;
+        margin: 0;
     }
 
     .populaires {
         width: 924px;
-        height: 250px;
+        height: 300px;
         margin-top: 50px;
+        
     }
 
     .populaires-cards {
@@ -411,11 +442,11 @@ footer div li{
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .card-subtitle {
         font-size: 13px;
     }
     
@@ -424,15 +455,17 @@ footer div li{
 
         width: 924px;
         height: 400px;
-  
-
+   
+        
+        
     }
     .card-actuality {
        
         width: 194px;
         height: 240px;
+        
 
-    
+
         
  
     }
@@ -470,11 +503,13 @@ footer div li{
     /* ... */
 
 
-    body{
-
-        max-width: 767px;
-    }
-
+   .main-container {
+ 
+    max-width: 767px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
     header img{
 
        margin-left: 150px;
@@ -491,7 +526,7 @@ footer div li{
     .list-head ul {
     
 
-        margin-right: 40px;
+        margin-right: 100px;
         
     }
     
@@ -522,7 +557,7 @@ footer div li{
 
     
         padding: 0px;
-        margin: 0px;
+        margin: 6px;
       
        
     }
@@ -531,11 +566,32 @@ footer div li{
 
     main form input[type="submit"]{
 
-       width: 49px;
-       border-bottom-left-radius: 15px;
-       border-top-left-radius: 15px;
-       color: var(--main-color);
+      
+       display: none;
 
+    }
+
+    main form input[type="submit2"]{
+
+      width: 49px;
+      background-color: var(--main-color);
+      color: #FFFFFF;
+     
+      border-radius: 15px;
+      border: none;
+      display: block;
+    
+
+    }
+    .fa-magnifying-glass{
+        color: #FFFFFF;
+        position:relative;
+        display: block;
+        left: -35px;
+        bottom: -18px;
+        font-size: 22px;
+       
+        
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -549,6 +605,7 @@ footer div li{
     .hebergements {
    
         background-color: #FFFFFF !important;
+        margin-left: 20px;
        
     }
 
@@ -573,6 +630,13 @@ footer div li{
         display: flex;
        
     }
+       .card-title {
+        font-size: 11px;
+    }
+
+    .card-subtitle {
+        font-size: 12px;
+    }
 
 
     .populaires {
@@ -580,7 +644,7 @@ footer div li{
         height: 700px;
         margin-bottom: 50px;
         justify-content: center;
-        margin-left: 0;
+        margin-left: 20px;
     }
 
     .populaires-cards {
@@ -598,7 +662,9 @@ footer div li{
     
     }
 
-
+    .actualités{
+        margin-left: 20px;
+    }
     .card-actuality {
        
         width: 250px;
@@ -632,8 +698,9 @@ footer div li{
     
     footer{
         background-color: var(--main-bg-color);
-        width: 300px;
+        width: 350px;
         height: 550px;
+        margin-right: 0;
     }
 
 
