@@ -201,6 +201,14 @@ input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
     background-color: var(--filter-bg-color);
 }
 
+
+.fa-circle-info{
+
+   
+ 
+    color: var(--main-color);
+   
+}
 /*populaires*/
 .card {
     background-color: white;
@@ -331,10 +339,16 @@ input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
 
 
 /*************************actualités*****************************/
+.actualités{
 
+    height: 550px;
+    width: 1500px;
+    padding-left: 30px;
+    
+}
 .card-actuality img{
 
-    width: 297px;
+    width: 308px;
     height: 380px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -346,13 +360,15 @@ input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
     display: inline-block;
     margin: 15px;
     justify-content: center;
+    
  
 
     width: 297px;
-    height: 420px;
+    height: 450px;
     border-radius: 15px;
     box-shadow: 5px 5px var(--main-bg-color);
-    padding-bottom: 30px;
+    padding: 10px;
+  
 
 }
 
@@ -364,7 +380,7 @@ input[value="Economique"], input[value="Familial"], input[value="Romantique"]{
 
 footer{
 
-    width: 1340px;
+    width: 1460px;
     height: 200px;
     background-color: var(--main-bg-color);
 }
@@ -401,7 +417,7 @@ footer div li{
    
      .main-container {
 
-            max-width: 992px;
+            
             padding: 0;
             box-sizing: border-box;
             margin: 3%;
@@ -461,8 +477,11 @@ footer div li{
     }
     .card-actuality {
        
-        width: 194px;
-        height: 240px;
+        width: 180px;
+        height: 250px;
+
+        font-size:11px;
+        margin: 5px;
         
 
 
@@ -664,22 +683,26 @@ footer div li{
 
     .actualités{
         margin-left: 20px;
+        
     }
+    
     .card-actuality {
        
-        width: 250px;
-        height: 210px;
-
-        align-items: flex-start;
-        padding: 20px 19px;
-        gap: 10px;
-        margin-left: 5px;
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
+            width: 260px;
+            height: 250px;
+    
+            font-size:11px;
+            
+          display: block;
+          font-size: 20px;
+            
+    
+    
+            
+     
+     }
        
-    }
+    
 
 
     .card-actuality img{
@@ -700,6 +723,7 @@ footer div li{
         background-color: var(--main-bg-color);
         width: 350px;
         height: 550px;
+        margin-top: 680px;
         margin-right: 0;
     }
 
