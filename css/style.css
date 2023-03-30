@@ -99,6 +99,7 @@ main form .fa {
 
 main form .submit2 {
     display: none;
+    background-color: #FFFFFF;
 }
 
 main form input[type="text"] {
