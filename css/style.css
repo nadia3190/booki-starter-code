@@ -25,27 +25,32 @@ body {
 header img {
     width: 61.09px;
     height: 19px;
-    left: 30px;
-    top: 50px;
+    margin-right: auto;
+    padding: 0 10px;
 }
 
-.list-head li {
-    display: inline-block;
-    margin-left: 20px;
+.list-head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav a {
+    padding: 20px 20px;
+}
+
+.nav-a {
+    display: block;
 }
 
 .border-li {
     border-top: 2px solid var(--main-color);
-    margin-top: 10px;
-}
-
-.list-head ul {
-    text-align: right;
-}
-
-.list-head a {
-    text-decoration: none;
-    font-weight: 400;
 }
 
 .list-head .colorBlack {
@@ -132,23 +137,29 @@ main form .submit {
     cursor: pointer;
 }
 
-main .list-filtres li {
-    margin: 30px;
+
+/******filters *****/
+
+main .list-filtres {
+    margin: 20px;
     font-weight: 700;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .list-filtres .fa-solid {
     position: absolute;
-    margin-left: 10px;
-    margin-top: 17px;
+    margin-left: 30px;
+    margin-top: 37px;
 }
 
-main .list-filtres li input[type="button"] {
+main .list-filtres input[type="button"] {
     font-weight: 700;
     border: 3px solid var(--main-bg-color);
     padding: 15px 30px;
     border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 input[value="Nos pépites"] {
@@ -358,13 +369,13 @@ footer div li {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media screen and (min-width:765px) and (max-width: 1024px) {
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .main-container {
         padding: 0;
         box-sizing: border-box;
         margin: 3%;
     }
-    main .list-filtres li {
+    main .list-filtres {
         margin: 0;
     }
     .hebergements-and-populaires {
@@ -422,46 +433,41 @@ footer div li {
 
 /* Small devices (phones, less than 768px) */
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 767px) {
     /* ... */
     .main-container {
-        max-width: 767px;
         padding: 0;
         box-sizing: border-box;
-        margin: 0;
+        margin: 2.5%;
     }
     header img {
-        margin-left: 150px;
+        padding-bottom: 20px;
     }
     .border-li {
         border-bottom: 2px solid var(--main-color);
         border-top: 0px;
+        border-bottom-width: 100%;
     }
     .border-li-act {
         border-bottom: 2px solid var(--main-bg-color);
     }
-    .list-head ul {
-        margin-right: 0;
-        flex-wrap: wrap;
-        display: flex;
+    .nav-a {
+        order: 1;
+        flex-basis: 100%;
+        text-align: center;
+        padding: 20px;
     }
-    .list-filtres ul .li {
+    .nav-a a {
+        flex-basis: 50%;
+    }
+    .list-filtres {
         margin: 0;
-        width: 50%;
-        display: block;
-    }
-    .list-filtres ul .li-filtres {
-        margin-right: 0;
     }
     input[value="Nos pépites"] {
         background-color: white;
     }
     input[value="Romantique"] {
         background-color: #DEEBFF;
-    }
-    .main-container {
-        padding: 0px;
-        margin: 6px;
     }
     main form .submit {
         display: none;
@@ -489,6 +495,7 @@ footer div li {
         flex-direction: column-reverse;
         border-color: var(--main-color);
         margin: 0;
+        padding: 5px;
     }
     .hebergements {
         background-color: #FFFFFF !important;
@@ -524,11 +531,12 @@ footer div li {
         margin-bottom: 50px;
         justify-content: center;
         align-items: center;
+        padding: 2%;
     }
     .populaires-cards {
         flex-direction: column;
         justify-content: space-between;
-        margin: 0;
+        margin: 5px;
         width: 100%;
     }
     .populaires-cards .card {
@@ -538,22 +546,21 @@ footer div li {
         object-fit: fill;
     }
     .actualités {
-        align-items: center;
         width: 100%;
-        padding-left: 15px;
+        padding-left: 1%;
     }
     .card-actuality {
-        width: 100%;
+        width: 90%;
         height: 230px;
         font-size: 11px;
         display: block;
         font-size: 20px;
-        margin: 0px;
+        margin: 10px;
     }
     .card-actuality img {
         width: 100%;
         height: 160px;
-        object-fit: cover;
+        object-fit: fill;
         flex: none;
         order: 0;
         align-self: stretch;
