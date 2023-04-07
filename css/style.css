@@ -2,15 +2,19 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-top: 6px;
-    padding: 0px;
-    margin-left: 0px;
 }
 
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+}
+
+.main-container {
+    padding: 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .fa-solid {
@@ -26,7 +30,7 @@ header img {
     width: 61.09px;
     height: 19px;
     margin-right: auto;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .list-head {
@@ -36,13 +40,10 @@ header img {
     flex-wrap: wrap;
 }
 
-a {
+nav a {
+    padding: 10px 10px;
     text-decoration: none;
     font-weight: 400;
-}
-
-nav a {
-    padding: 20px 20px;
 }
 
 .nav-a {
@@ -55,15 +56,6 @@ nav a {
 
 .list-head .colorBlack {
     color: #000000;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0;
-    box-sizing: border-box;
-    margin-left: 15%;
-    margin-right: 2.5%;
 }
 
 .section-title {
@@ -145,21 +137,15 @@ main .list-filtres {
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.list-filtres .fa-solid {
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 37px;
-}
-
-main .list-filtres input[type="button"] {
+main .list-filtres div {
     font-weight: 700;
     border: 3px solid var(--main-bg-color);
     padding: 15px 30px;
     border-radius: 25px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 input[value="Nos pépites"] {
@@ -170,6 +156,14 @@ input[value="Economique"],
 input[value="Familial"],
 input[value="Romantique"] {
     background-color: #FFFFFF;
+}
+
+main .list-filtres div input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
 }
 
 .li-bg-color {
@@ -237,14 +231,12 @@ input[value="Romantique"] {
     align-items: center;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     display: inline-block;
-    justify-content: space-around;
-    margin: 10px;
+    margin: 12px;
 }
 
 .card-hebere img {
-    width: 230px;
+    width: 100%;
     height: 124px;
-    position: relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
@@ -316,7 +308,7 @@ input[value="Romantique"] {
 .actualités {
     height: 550px;
     width: 1500px;
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .card-actuality img {
@@ -373,10 +365,10 @@ footer div li {
     .main-container {
         padding: 0;
         box-sizing: border-box;
-        margin: 3%;
+        margin: 5% auto;
     }
-    main .list-filtres {
-        margin: 0;
+    main .list-filtres div input {
+        margin-left: -2px;
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -423,7 +415,7 @@ footer div li {
     footer {
         background-color: var(--main-bg-color);
         width: 924px;
-        height: 163px;
+        height: 183px;
     }
     footer div li {
         margin-right: 60px;
@@ -438,10 +430,10 @@ footer div li {
     .main-container {
         padding: 0;
         box-sizing: border-box;
-        margin: 2.5%;
     }
     header img {
         padding-bottom: 20px;
+        margin-left: 150px;
     }
     .border-li {
         border-bottom: 2px solid var(--main-color);
@@ -452,7 +444,6 @@ footer div li {
         border-bottom: 2px solid var(--main-bg-color);
     }
     .nav-a {
-        order: 1;
         flex-basis: 100%;
         text-align: center;
         padding: 20px;
@@ -460,9 +451,18 @@ footer div li {
     .nav-a a {
         flex-basis: 50%;
     }
-    .list-filtres {
+    main .list-filtres {
         margin: 0;
     }
+    main .list-filtres div {
+        width: 35%;
+        padding: 15px;
+        margin: 0;
+    }
+    main .list-filtres h2 {
+        width: 100%;
+    }
+    /*mettre .liste-filtres en grid*/
     input[value="Nos pépites"] {
         background-color: white;
     }
@@ -488,9 +488,6 @@ footer div li {
         bottom: -18px;
         font-size: 22px;
     }
-    main .list-filtres li {
-        margin: 0;
-    }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
         border-color: var(--main-color);
@@ -505,7 +502,6 @@ footer div li {
         width: 100%;
         height: 230px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        margin-top: 50px;
         margin-left: 0;
         flex-wrap: wrap;
         flex-direction: column;
@@ -527,7 +523,6 @@ footer div li {
     }
     .populaires {
         width: 100%;
-        height: 800px;
         margin-bottom: 50px;
         justify-content: center;
         align-items: center;
@@ -540,31 +535,26 @@ footer div li {
         width: 100%;
     }
     .populaires-cards .card {
-        width: 100%;
         height: 138px;
         display: flex;
-        object-fit: fill;
+        object-fit: cover;
     }
     .actualités {
         width: 100%;
-        padding-left: 1%;
+        padding-left: 0.5%;
     }
     .card-actuality {
-        width: 90%;
+        width: 83%;
         height: 230px;
         font-size: 11px;
         display: block;
         font-size: 20px;
-        margin: 10px;
+        margin-right: auto;
     }
     .card-actuality img {
         width: 100%;
         height: 160px;
-        object-fit: fill;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
+        object-fit: cover;
     }
     footer {
         background-color: var(--main-bg-color);
@@ -573,9 +563,10 @@ footer div li {
         margin-top: 570px;
         margin-right: 0;
     }
-    footer div {
+    footer div li {
         list-style-type: none;
         justify-content: space-between;
         display: block;
+        width: 100%;
     }
 }
