@@ -451,6 +451,9 @@ footer div li {
     .nav-a a {
         flex-basis: 50%;
     }
+    main form input[type="search"] {
+        width: 50%;
+    }
     main .list-filtres {
         margin: 0;
     }
