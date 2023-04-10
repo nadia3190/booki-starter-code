@@ -8,6 +8,7 @@ body {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --black-color: #000;
 }
 
 .main-container {
@@ -41,13 +42,18 @@ header img {
 }
 
 nav a {
-    padding: 10px 10px;
+    padding: 15px;
     text-decoration: none;
     font-weight: 400;
+    color: var(--black-color);
+    border-top: 2px solid;
+    border-color: transparent;
 }
 
-.nav-a {
-    display: block;
+nav a:hover,
+nav a.active {
+    border-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .border-li {
@@ -55,7 +61,7 @@ nav a {
 }
 
 .list-head .colorBlack {
-    color: #000000;
+    color: var(--black-color);
 }
 
 .section-title {
@@ -91,7 +97,7 @@ main form .fa {
     font-size: 20px;
     left: -35px;
     top: 20px;
-    color: #000000;
+    color: var(--black-color);
 }
 
 main form .submit2 {
@@ -113,7 +119,7 @@ main form input[type="search"] {
     border: none;
     width: 200px;
     font-weight: 700;
-    color: #000000;
+    color: var(--black-color);
 }
 
 main form .submit {
@@ -217,6 +223,13 @@ main .list-filtres div input {
     justify-content: space-around;
 }
 
+.hebergement-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .card-hebere {
     background-color: white;
     border-radius: 20px;
@@ -226,8 +239,6 @@ main .list-filtres div input {
     align-items: center;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     display: inline-block;
-    margin-left: 32px;
-    margin-bottom: 20px;
 }
 
 .card-hebere img {
@@ -307,52 +318,69 @@ main .list-filtres div input {
 
 .actualités {
     height: 550px;
-    width: 104.5%;
-    padding: 0px;
+    width: 100%;
+    padding: 0;
+}
+
+.actualites-grid {
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card-actuality img {
     width: 100%;
     height: 380px;
-    object-fit: fill;
+    object-fit: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
 
 .card-actuality {
-    display: inline-block;
     justify-content: center;
-    width: 22.7%;
-    height: 440px;
+    width: 23%;
     border-radius: 15px;
     box-shadow: 5px 5px var(--main-bg-color);
-    margin-right: 20px;
 }
 
+.card-actuality div:nth-child(2) {
+    padding: 15px;
+}
+
+.card-actuality h4 {
+    margin: 0;
+    padding: 0;
+}
 
 /****************footer**********************/
 
 footer {
     width: 100%;
-    height: 250px;
     background-color: var(--main-bg-color);
-}
-
-footer li {
-    margin: 15px;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 footer div {
-    display: inline-block;
+    width: 33%;
 }
 
-footer div li {
+footer div h3 {
+    margin: 0;
+    padding: 0;
+}
+
+footer div ul {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
-    justify-content: space-between;
-    margin-right: 130px;
 }
 
+footer div ul li {
+    margin-top: 10px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -365,12 +393,12 @@ footer div li {
 @media screen and (min-width:768px) and (max-width: 1024px) {
     .main-container {
         padding: 0;
-        max-width: 1024px;
+        max-width: 100%;
         box-sizing: border-box;
         margin: 2.5%;
     }
     main .list-filtres {
-        width: 107%;
+        width: 100%;
     }
     main .list-filtres div input {
         margin-left: -2px;
@@ -380,7 +408,7 @@ footer div li {
         margin: 0;
     }
     .hebergements {
-        width: 915px;
+        width: 100%;
         height: 630.5px;
         margin: 0;
         padding: 2.5%;
@@ -391,7 +419,7 @@ footer div li {
         margin-left: 38px;
     }
     .populaires {
-        width: 915px;
+        width: 100%;
         height: 300px;
         margin-top: 50px;
     }
@@ -410,11 +438,11 @@ footer div li {
         font-size: 13px;
     }
     .actualités {
-        width: 924px;
+        width: 100%;
         height: 325px;
     }
     .card-actuality {
-        width: 211px;
+        width: 25%;
         height: 250px;
         font-size: 11px;
         padding: 3px;
@@ -428,7 +456,7 @@ footer div li {
     }
     footer {
         background-color: var(--main-bg-color);
-        width: 918px;
+        width: 100%;
         height: 183px;
     }
     footer div li {
@@ -517,7 +545,7 @@ footer div li {
         width: 100%;
     }
     .card-hebere {
-        width: 105%;
+        width: 100%;
         height: 230px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
         margin-left: -4%;
