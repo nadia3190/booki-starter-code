@@ -409,13 +409,12 @@ footer div ul li {
         margin: 2.5%;
     }
     main .list-filtres {
-        margin: 0;
         flex-wrap: nowrap;
         padding: 0;
+        width: 100%;
     }
     main .list-filtres div input {
         margin-left: -2px;
-        width: 100%;
     }
     .hebergements-and-populaires {
         flex-direction: column;
