@@ -409,10 +409,13 @@ footer div ul li {
         margin: 2.5%;
     }
     main .list-filtres {
-        width: 100%;
+        margin: 0;
+        flex-wrap: nowrap;
+        padding: 0;
     }
     main .list-filtres div input {
         margin-left: -2px;
+        width: 100%;
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -426,15 +429,12 @@ footer div ul li {
     .hebergement-grid {
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         gap: 20px;
     }
     .hebergements .card-hebere {
         width: 29%;
         height: 215px;
-    }
-    .nowrap {
-        margin-top: auto;
-        margin-right: auto;
     }
     .populaires {
         width: 100%;
@@ -493,27 +493,21 @@ footer div ul li {
         padding: 0;
         box-sizing: border-box;
     }
+    header {
+        display: flex;
+        width: 100%;
+    }
     header img {
-        padding-bottom: 20px;
-        margin-left: 135px;
+        margin-right: 0;
+        padding-right: 150px;
         position: relative;
     }
-    .border-li {
+    nav a:hover,
+    nav a.active {
+        color: var(--main-color);
+        border-top: transparent;
         border-bottom: 2px solid var(--main-color);
-        border-top: 0px;
-        border-bottom-width: 100%;
-    }
-    .border-li-act {
-        border-bottom: 2px solid var(--main-bg-color);
-    }
-    .nav-a {
-        flex-basis: 100%;
-        text-align: center;
-        padding-left: 20px;
-        position: relative;
-    }
-    .nav-a a {
-        flex-basis: 50%;
+        border-color: #0065FC;
     }
     main form input[type="search"] {
         width: 50%;
