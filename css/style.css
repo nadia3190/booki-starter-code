@@ -48,6 +48,7 @@ nav a {
     color: var(--black-color);
     border-top: 2px solid;
     border-color: transparent;
+    order: 1;
 }
 
 nav a:hover,
@@ -149,7 +150,7 @@ main .list-filtres {
 main .list-filtres div {
     font-weight: 700;
     border: 3px solid var(--main-bg-color);
-    padding: 15px 30px;
+    padding: 15px 20px;
     border-radius: 25px;
     margin: 10px;
 }
@@ -406,7 +407,6 @@ footer div ul li {
         padding: 0;
         max-width: 100%;
         box-sizing: border-box;
-        margin: 2.5%;
     }
     main .list-filtres {
         flex-wrap: nowrap;
@@ -476,10 +476,9 @@ footer div ul li {
     footer {
         background-color: var(--main-bg-color);
         width: 100%;
-        height: 183px;
     }
     footer div li {
-        margin-right: 60px;
+        margin-right: 0;
     }
 }
 
@@ -497,9 +496,16 @@ footer div ul li {
         width: 100%;
     }
     header img {
-        margin-right: 0;
-        padding-right: 150px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 20px;
+    }
+    nav a {
         position: relative;
+        transform: translate(-50%, -50%);
+        top: 30px;
+        left: 25%;
+        margin-bottom: 20px;
     }
     nav a:hover,
     nav a.active {
@@ -507,6 +513,9 @@ footer div ul li {
         border-top: transparent;
         border-bottom: 2px solid var(--main-color);
         border-color: #0065FC;
+    }
+    .bg-title {
+        margin-top: 45px;
     }
     main form input[type="search"] {
         width: 50%;
