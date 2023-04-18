@@ -142,16 +142,17 @@ main .list-filtres {
     width: 100%;
 }
 
+input[type="button"]:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
 main .list-filtres div {
     font-weight: 700;
     border: 3px solid var(--main-bg-color);
     padding: 15px 20px;
     border-radius: 25px;
     margin: 10px;
-}
-
-.background-button {
-    background-color: var(--filter-bg-color);
 }
 
 main .list-filtres div input {
@@ -165,10 +166,6 @@ main .list-filtres div input {
 main .list-filtres div:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
-}
-
-.hover-filter:hover {
-    background-color: white;
 }
 
 .li-bg-color {
@@ -485,7 +482,6 @@ footer {
         flex-direction: row;
         justify-content: space-around;
     }
-    header img {}
     .list-head {
         flex-direction: column;
         align-items: center;
