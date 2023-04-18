@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 
 :root {
@@ -13,9 +14,9 @@ body {
 
 .main-container {
     padding: 0;
+    margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 .fa-solid {
@@ -27,42 +28,36 @@ body {
     display: none;
 }
 
-header img {
-    width: 61.09px;
+.list-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-head img {
     height: 19px;
-    margin-right: auto;
     padding: 10px;
 }
 
-.list-head {
+nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-nav a {
-    padding: 15px;
+.menuItem {
     text-decoration: none;
-    font-weight: 400;
     color: var(--black-color);
-    border-top: 2px solid;
-    border-color: transparent;
-    order: 1;
+    font-weight: 400;
+    border-top: 2px solid transparent;
+    padding: 15px;
 }
 
-nav a:hover,
-nav a.active {
+.menuItem:hover {
     border-color: var(--main-color);
     color: var(--main-color);
-}
-
-.border-li {
-    border-top: 2px solid var(--main-color);
-}
-
-.list-head .colorBlack {
-    color: var(--black-color);
 }
 
 .section-title {
@@ -327,7 +322,6 @@ main .list-filtres div:hover {
 /*************************actualités*****************************/
 
 .actualités {
-    height: 550px;
     width: 100%;
     padding: 0;
 }
@@ -366,31 +360,28 @@ main .list-filtres div:hover {
 /****************footer**********************/
 
 footer {
-    width: 100%;
     background-color: var(--main-bg-color);
     display: flex;
-    padding: 30px;
-    box-sizing: border-box;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-footer div {
+.blockFooter {
     width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 30px;
 }
 
-footer div h3 {
+.blockFooter h3 {
     margin: 0;
     padding: 0;
 }
 
-footer div ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-footer div ul li {
-    margin-top: 10px;
+.footerItem {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -407,6 +398,7 @@ footer div ul li {
         padding: 0;
         max-width: 100%;
         box-sizing: border-box;
+        margin: 0 auto;
     }
     main .list-filtres {
         flex-wrap: nowrap;
@@ -474,11 +466,7 @@ footer div ul li {
         padding: 2.5%;
     }
     footer {
-        background-color: var(--main-bg-color);
         width: 100%;
-    }
-    footer div li {
-        margin-right: 0;
     }
 }
 
@@ -494,21 +482,16 @@ footer div ul li {
     header {
         display: flex;
         width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
     }
-    header img {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 20px;
+    header img {}
+    .list-head {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
-    nav a {
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: 30px;
-        left: 25%;
-        margin-bottom: 20px;
-    }
-    nav a:hover,
-    nav a.active {
+    .menuItem:hover {
         color: var(--main-color);
         border-top: transparent;
         border-bottom: 2px solid var(--main-color);
@@ -560,23 +543,22 @@ footer div ul li {
         flex-direction: column-reverse;
         border-color: var(--main-color);
         margin: 0;
-        padding: 5px;
+        padding: 0px;
     }
     .hebergements {
         background-color: #FFFFFF !important;
         width: 100%;
+        padding: 0;
     }
     .card-hebere {
         width: 100%;
         height: 230px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-        margin-left: -4%;
-        margin-right: -4%;
     }
     .card-hebere img {
         width: 100%;
         height: 140px;
-        object-fit: fill;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         display: flex;
@@ -600,7 +582,6 @@ footer div ul li {
     }
     .populaires-cards .card {
         height: 138px;
-        display: flex;
         object-fit: cover;
     }
     .actualités {
@@ -610,11 +591,11 @@ footer div ul li {
         text-align: center;
     }
     .card-actuality {
-        width: 88%;
+        width: 100%;
         height: 225px;
         font-size: 16px;
         justify-content: center;
-        margin: 15px;
+        margin: 10px;
     }
     .card-actuality img {
         height: 160px;
@@ -622,21 +603,10 @@ footer div ul li {
         width: 100%;
     }
     footer {
-        background-color: var(--main-bg-color);
-        width: 100%;
-        margin-right: 0;
-        margin-top: 550px;
-        display: flex;
         flex-direction: column;
+        justify-content: unset;
     }
-    footer div {
-        list-style-type: none;
-        justify-content: space-between;
-        width: 100%;
-    }
-    footer div li {
-        margin-right: 0;
-        margin-left: 0;
-        padding: 10px;
+    .blockFooter {
+        width: auto;
     }
 }
