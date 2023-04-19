@@ -320,13 +320,14 @@ main .list-filtres div:hover {
 
 .actualités {
     width: 100%;
+    height: 500px;
     padding: 0;
 }
 
 .actualites-grid {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .card-actuality img {
@@ -493,9 +494,6 @@ footer {
         border-bottom: 2px solid var(--main-color);
         border-color: #0065FC;
     }
-    .bg-title {
-        margin-top: 45px;
-    }
     main form input[type="search"] {
         width: 50%;
     }
@@ -531,9 +529,6 @@ footer {
     }
     .background-button {
         background-color: #FFFFFF;
-    }
-    .background-button2 {
-        background-color: var(--filter-bg-color);
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -582,16 +577,22 @@ footer {
     }
     .actualités {
         width: 100%;
+        height: 1030px;
+    }
+    .actualites-grid {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
     }
     .actualités h3 {
-        text-align: center;
+        text-align: left;
     }
     .card-actuality {
         width: 100%;
         height: 225px;
         font-size: 16px;
         justify-content: center;
-        margin: 10px;
     }
     .card-actuality img {
         height: 160px;
