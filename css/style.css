@@ -273,6 +273,7 @@ main .list-filtres div:hover {
     height: 60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .card-hebere img:hover {
