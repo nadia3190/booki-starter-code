@@ -25,6 +25,7 @@ body {
 .fa-magnifying-glass {
     color: #FFFFFF;
     display: none;
+    cursor: pointer;
 }
 
 .list-head img {
@@ -86,6 +87,11 @@ nav {
 
 
 /************************ bar-search ********************************/
+
+.justify-content {
+    margin-left: 15px;
+    margin-right: 0;
+}
 
 main form {
     display: flex;
@@ -511,7 +517,7 @@ footer {
     main .list-filtres div {
         width: 35%;
         padding: 15px;
-        margin: 6px;
+        margin: 2px;
     }
     main .list-filtres h2 {
         width: 100%;
