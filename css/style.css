@@ -182,6 +182,7 @@ main .list-filtres div:hover {
     padding: 2px 2px;
     border: 1px solid #D9D9D9;
     text-align: center;
+    margin-right: 10px;
 }
 
 
@@ -409,9 +410,6 @@ footer {
         padding: 0;
         width: 100%;
     }
-    main .list-filtres div input {
-        margin-left: -2px;
-    }
     .hebergements-and-populaires {
         flex-direction: column;
         margin: 0;
@@ -423,8 +421,6 @@ footer {
     }
     .hebergement-grid {
         flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
         gap: 20px;
     }
     .hebergements .card-hebere {
@@ -512,7 +508,7 @@ footer {
     main .list-filtres div {
         width: 35%;
         padding: 15px;
-        margin: 0;
+        margin: 6px;
     }
     main .list-filtres h2 {
         width: 100%;
@@ -561,7 +557,6 @@ footer {
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        display: flex;
     }
     .card-title {
         font-size: 11px;
