@@ -95,11 +95,6 @@ nav {
 
 /************************ bar-search ********************************/
 
-.justify-content {
-    margin-left: 15px;
-    margin-right: 0;
-}
-
 main form {
     display: flex;
 }
