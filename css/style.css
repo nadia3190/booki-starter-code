@@ -247,7 +247,6 @@ main .list-filtres div:hover {
 
 .hebergements {
     width: 65%;
-    justify-content: space-around;
 }
 
 .hebergement-grid {
